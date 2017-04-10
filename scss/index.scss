@@ -572,6 +572,7 @@ nav#bar-main {
   }
   a {
     text-decoration: none;
+    color: $blue-darker;
   }
 }
 .row-cb {
@@ -584,6 +585,9 @@ nav#bar-main {
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 0 3px 0 rgba(2, 7, 23, 0.10);
+  height: 17.7em;
+  max-height: 17.7em;
+  min-height: 17.7em;
   display: inline-block;
   margin-top: 5px;
   position: relative;
@@ -605,6 +609,33 @@ nav#bar-main {
   }
   .table-content{
     margin: 45px 2% 2% 2%;
-    background:red;
   }
+}
+.input-cb {
+  display: inline-block;
+  line-height: 20px;
+  width: 32%;
+  label {
+    color: $blue-darker;
+    font-size: 0.7em;
+    font-family: sans-serif;
+    display: block;
+  }
+  input {
+    border: 1px solid #dedee9;
+    border-radius: 3px;
+    display: block;
+    height: 20px;
+    line-height: 10px !important;
+    width: 95%;
+  }
+}
+.button-cb {
+  background: $green-lighter;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  height: 26px;
+  display: inline-block;
+  width: 100%;
 }

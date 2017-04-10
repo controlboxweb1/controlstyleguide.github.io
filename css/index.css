@@ -364,7 +364,12 @@ template {
 body {
   margin: 0 !important;
   background-color: #f0f3fe;
-  width: 100%; }
+  /*  -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    width: 100%; */ }
 
 nav#bar-main {
   background-color: #0A2B61;
@@ -373,7 +378,8 @@ nav#bar-main {
   position: relative;
   height: 43px;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 9; }
   nav#bar-main h1 {
     background-image: url(../img/logo-cb-color.png);
     background-repeat: no-repeat;
@@ -525,12 +531,18 @@ nav#bar-main {
 
 .input-cb {
   display: inline-block;
-  line-height: 20px; }
+  line-height: 20px;
+  position: relative; }
   .input-cb label {
     color: #0A2B61;
     font-size: 0.7em;
     font-family: sans-serif;
     display: block; }
+    .input-cb label span a {
+      color: #0FC930;
+      text-decoration: none; }
+    .input-cb label span a.delete {
+      color: #e7574d; }
   .input-cb input {
     border: 1px solid #dedee9;
     border-radius: 3px;
@@ -560,5 +572,29 @@ nav#bar-main {
 
 .four-columns {
   width: 24% !important; }
+
+#nav-bottom {
+  position: fixed;
+  bottom: 7px;
+  left: 2%;
+  height: 35px;
+  z-index: 8;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  float: left; }
+  #nav-bottom li {
+    background-color: #0A2B61;
+    float: left;
+    list-style: none;
+    height: 35px;
+    text-align: center;
+    padding: 2% 2% 0 2%;
+    width: 35px; }
+    #nav-bottom li a {
+      color: #fff !important;
+      font-family: sans-serif;
+      text-decoration: none;
+      text-align: center; }
 
 /*# sourceMappingURL=index.css.map */

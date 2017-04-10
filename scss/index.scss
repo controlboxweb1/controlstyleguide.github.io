@@ -421,8 +421,12 @@ template {
 body {
   margin:0 !important;
   background-color: rgb(240, 243, 254);
-
-  width: 100%;
+/*  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  width: 100%; */
 }
 // COLROS -------------
 
@@ -432,7 +436,9 @@ $blue-lighter: #2F83D0;
 $rojo-alert: #C95E5E;
 $yellow-lighter: #F1FCD2;
 $red-lighter: #FCD2D2;
+$red-darker: #e7574d;
 $orange-lighter: #FFE4C4;
+
 
 nav#bar-main {
   background-color: $blue-darker;
@@ -442,6 +448,7 @@ nav#bar-main {
   height: 43px;
   top: 0;
   width: 100%;
+  z-index: 9;
   h1 {
     background-image: url(../img/logo-cb-color.png);
     background-repeat: no-repeat;
@@ -616,11 +623,22 @@ nav#bar-main {
 .input-cb {
   display: inline-block;
   line-height: 20px;
+  position: relative;
   label {
     color: $blue-darker;
     font-size: 0.7em;
     font-family: sans-serif;
     display: block;
+    span {
+      a {
+        color: $green-lighter;
+        text-decoration: none;
+      }
+
+      a.delete {
+        color: $red-darker;
+      }
+    }
   }
   input {
     border: 1px solid #dedee9;
@@ -659,6 +677,35 @@ nav#bar-main {
 }
 
 
+// nav bottom 
+
+
+#nav-bottom {
+  position: fixed;
+  bottom: 7px;
+  left: 2%;
+  height: 35px;
+  z-index: 8;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  float: left;
+  li {
+    background-color: $blue-darker;
+    float: left;
+    list-style: none;
+    height: 35px;
+    text-align: center;
+    padding: 2% 2% 0 2%;
+    width: 35px;
+    a {
+      color: #fff !important;
+      font-family: sans-serif;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
 
 
 

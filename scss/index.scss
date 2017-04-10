@@ -588,10 +588,12 @@ nav#bar-main {
   height: 17.7em;
   max-height: 17.7em;
   min-height: 17.7em;
-  display: inline-block;
+  display: inline-flex;
   margin-top: 5px;
   position: relative;
   width: 49%;
+  max-width: 49%;
+  min-width: 49%;
   .header-box {
     background-color: $blue-lighter;
     border-radius: 3px 3px 0 0;
@@ -614,7 +616,6 @@ nav#bar-main {
 .input-cb {
   display: inline-block;
   line-height: 20px;
-  width: 32%;
   label {
     color: $blue-darker;
     font-size: 0.7em;
@@ -637,5 +638,33 @@ nav#bar-main {
   color: #fff;
   height: 26px;
   display: inline-block;
+  margin: 5px 0 5px 0;
   width: 100%;
 }
+
+
+// list inputs width 
+
+.one-columns {
+  width: 96.8% !important;
+}
+.two-columns {
+  width: 49% !important;
+}
+.three-columns {
+  width: 32% !important;
+}
+.four-columns {
+  width: 24% !important;
+}
+
+
+
+
+
+
+
+
+
+
+

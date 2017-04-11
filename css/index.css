@@ -364,12 +364,21 @@ template {
 body {
   margin: 0 !important;
   background-color: #f0f3fe;
-  /*  -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    width: 100%; */ }
+  /*-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
+  width: 100%; }
+
+.new-tag {
+  background-color: #F0E892;
+  text-align: center;
+  padding: 2%;
+  font-size: 0.8em;
+  display: inline-block; }
+  .new-tag p {
+    color: #6A3113; }
 
 nav#bar-main {
   background-color: #0A2B61;
@@ -436,7 +445,8 @@ nav#bar-main {
       margin-top: 0.2em;
       visibility: hidden;
       padding: 0;
-      position: relative; }
+      position: relative;
+      width: 130%; }
       nav#bar-main ul.main-list ul.dropdown:before {
         content: "";
         background-color: white;

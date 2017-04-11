@@ -438,6 +438,7 @@ $yellow-lighter: #F1FCD2;
 $red-lighter: #FCD2D2;
 $red-darker: #e7574d;
 $orange-lighter: #FFE4C4;
+$transition: .98s;
 
 
 nav#bar-main {
@@ -472,6 +473,21 @@ nav#bar-main {
       display: inline-block;
       text-align: center;
       width: 7%;
+      a.link-drop {
+        background-image: url(../img/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+       a.setting {
+        background-image: url(../img/setting-icon.svg) !important;
+        background-repeat: no-repeat;
+        background-position: right;
+       }
+       a.log-out {
+        background-image: url(../img/log-out.svg) !important;
+        background-repeat: no-repeat;
+        background-position: right;
+       } 
       &:hover {
         a.link-drop {
           color: $green-lighter;
@@ -517,7 +533,12 @@ nav#bar-main {
          display: inline-block;
          margin: 0 !important;
          text-align: left;
+         transition: $transition;
          width: 100%;
+         &:hover {
+            background-color: #ACE0FA;
+            transition: $transition;
+         }
          a{
            color: $blue-darker;
            width: 100%;
@@ -682,7 +703,7 @@ nav#bar-main {
 
 #nav-bottom {
   position: fixed;
-  bottom: 7px;
+  bottom: -5%;
   left: 2%;
   height: 35px;
   z-index: 8;
@@ -690,21 +711,53 @@ nav#bar-main {
   margin: 0;
   width: auto;
   float: left;
+  transition: $transition;
+  &:hover {
+    bottom: 2%;
+    transition: $transition;
+  }
+  div.link-bar {
+    background-color: $blue-darker;
+    height: 13px;
+    width: 100px;
+    margin-top: -28px;
+    padding: 2%;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    p {
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      font-size: 0.9em;
+    }
+    img {
+      width: 11%;
+    }
+  }
   li {
     background-color: $blue-darker;
     float: left;
     list-style: none;
     height: 35px;
     text-align: center;
-    padding: 2% 2% 0 2%;
+    transition: $transition;
+    padding: 4% 2% 0 2%;
     width: 35px;
     a {
       color: #fff !important;
       font-family: sans-serif;
       text-decoration: none;
       text-align: center;
+      transition: $transition;
+      &:hover {
+        opacity: 0.5;
+        transition: $transition;
+      }
     }
   }
+  li.add-new{
+      background-color: #264B8A !important;
+    }
 }
 
 

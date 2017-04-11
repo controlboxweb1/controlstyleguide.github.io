@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="new-courier-waybill" transform="translate(-317.000000, -670.000000)" fill="#E7574D">
+            <g id="Consignee-information-Copy" transform="translate(30.000000, 526.000000)">
+                <path d="M306.3125,145.3125 L301.6875,145.3125 L300.3125,144 L293.6875,144 L292.3125,145.3125 L287.6875,145.3125 L287.6875,148 L306.3125,148 L306.3125,145.3125 Z M289,165.3125 C289,166.062504 289.260414,166.697914 289.78125,167.21875 C290.302086,167.739586 290.937496,168 291.6875,168 L302.3125,168 C303.062504,168 303.697914,167.739586 304.21875,167.21875 C304.739586,166.697914 305,166.062504 305,165.3125 L305,149.3125 L289,149.3125 L289,165.3125 Z" id=""></path>
+            </g>
+        </g>
+    </g>
+</svg>

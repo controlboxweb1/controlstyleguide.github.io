@@ -554,11 +554,28 @@ nav#bar-main {
     font-size: 0.7em;
     font-family: sans-serif;
     display: block; }
+    .input-cb label span.links-input {
+      position: absolute;
+      width: 78%;
+      text-align: right; }
     .input-cb label span a {
       color: #0FC930;
       text-decoration: none; }
+    .input-cb label span a.email {
+      background-image: url(../img/mail-icon.svg);
+      padding-left: 8%;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 15%;
+      margin-left: 7%; }
     .input-cb label span a.delete {
-      color: #e7574d; }
+      background-image: url(../img/icontrash.svg);
+      color: #e7574d;
+      padding-left: 8%;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 19%;
+      margin-left: 7%; }
   .input-cb input {
     border: 1px solid #dedee9;
     border-radius: 3px;

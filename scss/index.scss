@@ -651,14 +651,33 @@ nav#bar-main {
     font-size: 0.7em;
     font-family: sans-serif;
     display: block;
+    span.links-input {
+      position: absolute;
+      width: 78%;
+      text-align: right;
+    }
     span {
       a {
         color: $green-lighter;
         text-decoration: none;
       }
+       a.email {
+        background-image: url(../img/mail-icon.svg);  
+        padding-left: 8%;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15%;
+        margin-left: 7%;
+      }
 
       a.delete {
-        color: $red-darker;
+        background-image: url(../img/icontrash.svg);
+        color: #e7574d;
+        padding-left: 8%;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 19%;
+        margin-left: 7%;
       }
     }
   }
